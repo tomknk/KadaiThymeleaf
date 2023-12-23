@@ -13,7 +13,7 @@ public class OutputController {
                              @RequestParam(name = "previous", required = false) String previousValue,
                              Model model) {
         if (inputValue != null) {
-            model.addAttribute("previousValueMessage", "前回入力された値は「" + previousValue + "」でした。");
+            model.addAttribute("previousValueMessage", previousValue);
             model.addAttribute("inputValue", inputValue);
         }
         return "output";
