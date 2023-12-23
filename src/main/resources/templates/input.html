@@ -13,7 +13,7 @@
     <p th:if="${param.previous != null}">前回入力された値は「<span th:text="${param.previous[0]}"></span>」でした。</p>
     <form method="post" action="/output">
         <input type="text" name="inputValue">
-        <button type="submit">送信</button>
+        <button type="submit"th:text="#{content.send}"</button>
     </form>
 </body>
 

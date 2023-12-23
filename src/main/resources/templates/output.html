@@ -8,6 +8,6 @@
     <h1 th:text="#{content.title}"></h1>
     <h2 th:text="#{content.output}"></h2>
     <p th:if="${inputValue != null}">入力された値は「<span th:text="${inputValue}"></span>」です。</p>
-    <p><a th:href="@{input(previous=${inputValue})}">入力画面へ戻る</a></p>
+    <p><a th:href="@{input(previous=${inputValue})}"th:text="#{content.returninput}"</a></p>
 </body>
 </html>
